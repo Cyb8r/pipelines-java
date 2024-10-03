@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: NEW_POOL
 
 steps:
 - task: Maven@3
