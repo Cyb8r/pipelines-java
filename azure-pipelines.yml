@@ -11,16 +11,6 @@ pool: NEW_POOL
 steps:
 - task: Maven@4
   inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
-- task: Maven@4
-  inputs:
     azureSubscription: 'MSDN Platforms Subscription(8d350286-edf6-4a53-b8f7-cfcc76ef61e1)'
     mavenPomFile: 'pom.xml'
     publishJUnitResults: true
